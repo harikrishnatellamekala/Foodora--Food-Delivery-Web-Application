@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpiceFit | Cart</title>
+
+    <link rel="stylesheet" href="cart.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span class="logo-mark">SF</span>
+        <span class="logo-text">
+            Spice<span>Fit</span>
+        </span>
+    </a>
+
+    <nav class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="restaurants.html">
+            Restaurants
+        </a>
+
+        <a href="orders.html">
+            Order
+        </a>
+
+    </nav>
+
+    <div class="nav-actions">
+
+        <a href="login.html" class="login-link">
+            Login
+        </a>
+
+        <a href="cart.html" class="cart-button active">
+            Cart
+            <span id="cartCount">0</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+<main class="cart-page">
+
+    <div class="cart-heading">
+
+        <p class="eyebrow">
+            YOUR SELECTION
+        </p>
+
+        <h1>
+            Your Cart
+        </h1>
+
+        <p>
+            Review your items before placing your order.
+        </p>
+
+    </div>
+
+
+    <section class="cart-layout">
+
+        <!-- CART ITEMS -->
+
+        <div class="cart-items-section">
+
+            <div id="cartItems"></div>
+
+            <div id="emptyCart" class="empty-cart">
+
+                <div class="empty-icon">
+                    🛒
+                </div>
+
+                <h2>
+                    Your cart is empty
+                </h2>
+
+                <p>
+                    Add something delicious from our restaurants.
+                </p>
+
+                <a href="restaurants.html" class="browse-btn">
+                    Browse Restaurants
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- BILL -->
+
+        <aside class="bill-card">
+
+            <h2>
+                Bill Details
+            </h2>
+
+            <div class="bill-row">
+                <span>Item Total</span>
+                <strong id="itemTotal">₹0</strong>
+            </div>
+
+            <div class="bill-row">
+                <span>Delivery Fee</span>
+                <strong id="deliveryFee">₹40</strong>
+            </div>
+
+            <div class="bill-row">
+                <span>Platform Fee</span>
+                <strong>₹5</strong>
+            </div>
+
+            <div class="bill-divider"></div>
+
+            <div class="bill-total">
+                <span>Total</span>
+                <strong id="grandTotal">₹0</strong>
+            </div>
+
+            <button id="proceedBtn" class="proceed-btn">
+                Proceed to Pay
+            </button>
+
+        </aside>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div>
+        <strong>SpiceFit</strong>
+        <p>Good food. Simple ordering.</p>
+    </div>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="order.html">Order</a>
+    </div>
+
+</footer>
+
+
+<script src="cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: #f8f3ec;
+    color: #2d221c;
+}
+
+.payment-nav {
+    height: 75px;
+    padding: 0 8%;
+
+    background: #fffaf5;
+    border-bottom: 1px solid #eadfd2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment-nav strong {
+    font-size: 22px;
+}
+
+.payment-nav strong span {
+    color: #b85c38;
+}
+
+.payment-page {
+    width: min(1100px, 90%);
+    margin: 60px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 30px;
+}
+
+.eyebrow {
+    color: #b85c38;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    margin: 10px 0 30px;
+}
+
+.payment-card,
+.summary-card {
+    background: #fffaf5;
+    border: 1px solid #eadfd2;
+    border-radius: 20px;
+    padding: 28px;
+}
+
+.payment-card h2,
+.summary-card h2 {
+    margin-bottom: 22px;
+}
+
+.payment-option {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    padding: 18px;
+
+    border: 1px solid #e4d7ca;
+    border-radius: 14px;
+
+    margin-bottom: 12px;
+
+    cursor: pointer;
+}
+
+.payment-option input {
+    accent-color: #b85c38;
+}
+
+.payment-option div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.payment-option small {
+    color: #817267;
+}
+
+.extra-box {
+    margin-top: 18px;
+}
+
+.extra-box input {
+    width: 100%;
+    padding: 14px;
+
+    border: 1px solid #ddd0c3;
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.card-row {
+    display: flex;
+    gap: 10px;
+}
+
+.place-order {
+    width: 100%;
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #b85c38;
+    color: white;
+
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.summary-card {
+    height: fit-content;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    font-size: 14px;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 15px 0;
+
+    color: #74665c;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+
+    font-size: 19px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e6d9cc;
+}
+
+@media(max-width: 800px) {
+
+    .payment-page {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SpiceFit | Restaurants</title>
+
+    <!-- Inter Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Restaurant CSS -->
+
+    <link rel="stylesheet"
+          href="restaurants.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html"
+           class="logo">
+
+            <span class="logo-mark">
+                SF
+            </span>
+
+            <span class="logo-text">
+                Spice<span>Fit</span>
+            </span>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="restaurants.html"
+               class="active">
+                Restaurants
+            </a>
+
+            <!-- <a href="index.html#offers">
+                Orders
+            </a> -->
+
+            <a href="order.html">
+                My Orders
+            </a>
+
+        </nav>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="nav-actions">
+
+            <a href="login.html"
+               class="login-link">
+                Login
+            </a>
+
+            <a href="cart.html"
+               class="cart-button">
+
+                Cart
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </a>
+
+        </div>
+
+
+        <!-- MOBILE MENU -->
+
+        <button class="mobile-menu"
+                id="mobileMenu">
+
+            ☰
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MOBILE NAVIGATION
+===================================================== -->
+
+<div class="mobile-nav"
+     id="mobileNav">
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="restaurants.html">
+        Restaurants
+    </a>
+
+    <a href="index.html#offers">
+        Offers
+    </a>
+
+    <a href="orders.html">
+        My Orders
+    </a>
+
+    <a href="login.html">
+        Login
+    </a>
+
+    <a href="cart.html">
+        Cart
+    </a>
+
+</div>
+
+
+
+<!-- =====================================================
+     RESTAURANTS
+===================================================== -->
+
+<main class="restaurants-page">
+
+
+    <!-- PAGE TITLE -->
+
+    <section class="restaurants-heading">
+
+        <p>
+            BENGALURU'S FOOD STOPS
+        </p>
+
+        <h1>
+            Restaurants
+        </h1>
+
+        <span>
+            Discover food from some of Bengaluru's
+            favourite restaurants.
+        </span>
+
+    </section>
+
+
+
+    <!-- =================================================
+         RESTAURANT LIST
+    ================================================== -->
+
+    <section class="restaurant-list">
+
+
+        <!-- =================================================
+             01
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="The Rameshwaram Cafe"
+                 data-location="Indiranagar">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     rameshwaram-cafe.jpg
+                -->
+
+                <img src="./images/restarant_image/coffe.jfif"
+                     alt="The Rameshwaram Cafe">
+
+                <span class="delivery">
+                    30–35 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        The Rameshwaram Cafe
+                    </h2>
+
+                    <p class="restaurant-type">
+                        South Indian • Tiffins
+                    </p>
+
+                    <p class="restaurant-location">
+                        Indiranagar
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.6
+                    </span>
+
+                    <span class="famous">
+                        Ghee Podi Idli
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             02
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Vidyarthi Bhavan"
+                 data-location="Basavanagudi">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     vidyarthi-bhavan.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/vidya_dosa.jfif"
+                     alt="Vidyarthi Bhavan">
+
+                <span class="delivery">
+                    25–30 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Vidyarthi Bhavan
+                    </h2>
+
+                    <p class="restaurant-type">
+                        South Indian • Dosa
+                    </p>
+
+                    <p class="restaurant-location">
+                        Basavanagudi
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.5
+                    </span>
+
+                    <span class="famous">
+                        Masala Dosa
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             03
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="MTR"
+                 data-location="Lalbagh Road">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     mtr.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/mtr_rava_dosa.jfif"
+                     alt="MTR">
+
+                <span class="delivery">
+                    30–35 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        MTR
+                    </h2>
+
+                    <p class="restaurant-type">
+                        South Indian • Breakfast
+                    </p>
+
+                    <p class="restaurant-location">
+                        Lalbagh Road
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.5
+                    </span>
+
+                    <span class="famous">
+                        Rava Idli
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             04
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="CTR"
+                 data-location="Malleshwaram">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     ctr.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/benne_dosa.jfif"
+                     alt="CTR">
+
+                <span class="delivery">
+                    25–30 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        CTR
+                    </h2>
+
+                    <p class="restaurant-type">
+                        South Indian • Dosa
+                    </p>
+
+                    <p class="restaurant-location">
+                        Malleshwaram
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.5
+                    </span>
+
+                    <span class="famous">
+                        Benne Masala Dosa
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             05
+        ================================================== 
+
+        <article class="restaurant-card"
+                 data-restaurant="Brahmins Coffee Bar"
+                 data-location="Basavanagudi">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     brahmins-coffee-bar.jpg
+                
+
+                <img src="./images/restarant_image/resta/resta/Brahmins_Coffee .jfif"
+                     alt="Brahmins Coffee Bar">
+
+                <span class="delivery">
+                    20–25 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Brahmins' Coffee Bar
+                    </h2>
+
+                    <p class="restaurant-type">
+                        South Indian • Coffee
+                    </p>
+
+                    <p class="restaurant-location">
+                        Basavanagudi
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.4
+                    </span>
+
+                    <span class="famous">
+                        Idli Vada
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+         =================================================
+             06
+        ================================================== 
+
+        <article class="restaurant-card"
+                 data-restaurant="Veena Stores"
+                 data-location="Malleshwaram">
+
+            <div class="restaurant-photo">
+
+                 PUT:
+                     veena-stores.jpg
+                
+
+                <img src="./images/restarant_image/resta/resta/veena_stores.jfif"
+                     alt="Veena Stores">
+
+                <span class="delivery">
+                    25–30 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Veena Stores
+                    </h2>
+
+                    <p class="restaurant-type">
+                        South Indian • Tiffins
+                    </p>
+
+                    <p class="restaurant-location">
+                        Malleshwaram
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.4
+                    </span>
+
+                    <span class="famous">
+                        Idli
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+    -->
+
+
+        <!-- =================================================
+             07
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Meghana Foods"
+                 data-location="Jayanagar">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     meghana-foods.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/Meghana.jfif"
+                     alt="Meghana Foods">
+
+                <span class="delivery">
+                    30–35 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Meghana Foods
+                    </h2>
+
+                    <p class="restaurant-type">
+                        Andhra • Biryani • Non-Veg
+                    </p>
+
+                    <p class="restaurant-location">
+                        Jayanagar
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.5
+                    </span>
+
+                    <span class="famous">
+                        Chicken Biryani
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             08
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Nagarjuna"
+                 data-location="Residency Road">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     nagarjuna.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/Nagarjuna.jfif"
+                     alt="Nagarjuna">
+
+                <span class="delivery">
+                    30–40 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Nagarjuna
+                    </h2>
+
+                    <p class="restaurant-type">
+                        Andhra • Meals • Non-Veg
+                    </p>
+
+                    <p class="restaurant-location">
+                        Residency Road
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.4
+                    </span>
+
+                    <span class="famous">
+                        Andhra Meals
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             09
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Nandhana Palace"
+                 data-location="Koramangala">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     nandhana-palace.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/nandana_palace.jfif"
+                     alt="Nandhana Palace">
+
+                <span class="delivery">
+                    30–35 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Nandhana Palace
+                    </h2>
+
+                    <p class="restaurant-type">
+                        Andhra • Biryani • Kebabs
+                    </p>
+
+                    <p class="restaurant-location">
+                        Koramangala
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.3
+                    </span>
+
+                    <span class="famous">
+                        Chicken Biryani
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             10
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Shivaji Military Hotel"
+                 data-location="Jayanagar">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     shivaji-military-hotel.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/Shivaji Millitary.jfif"
+                     alt="Shivaji Military Hotel">
+
+                <span class="delivery">
+                    30–40 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Shivaji Military Hotel
+                    </h2>
+
+                    <p class="restaurant-type">
+                        Karnataka • Non-Veg
+                    </p>
+
+                    <p class="restaurant-location">
+                        Jayanagar
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.4
+                    </span>
+
+                    <span class="famous">
+                        Donne Biryani
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             11
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Empire Restaurant"
+                 data-location="Shivajinagar">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     empire.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/Empire.jfif"
+                     alt="Empire Restaurant">
+
+                <span class="delivery">
+                    25–35 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Empire Restaurant
+                    </h2>
+
+                    <p class="restaurant-type">
+                        Indian • Kebabs • Biryani
+                    </p>
+
+                    <p class="restaurant-location">
+                        Shivajinagar
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.2
+                    </span>
+
+                    <span class="famous">
+                        Chicken Kebab
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             12
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Truffles"
+                 data-location="Koramangala">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     truffles.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/Truffles, Bangalore_.jfif"
+                     alt="Truffles">
+
+                <span class="delivery">
+                    30–40 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Truffles
+                    </h2>
+
+                    <p class="restaurant-type">
+                        Burgers • Italian • Desserts
+                    </p>
+
+                    <p class="restaurant-location">
+                        Koramangala
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.9
+                    </span>
+
+                    <span class="famous">
+                        Chicken Burger
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             13
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Toit"
+                 data-location="Indiranagar">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     toit.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/toit bangalore.jfif"
+                     alt="Toit">
+
+                <span class="delivery">
+                    35–45 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Toit
+                    </h2>
+
+                    <p class="restaurant-type">
+                        Italian • Pizza • Continental
+                    </p>
+
+                    <p class="restaurant-location">
+                        Indiranagar
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.9
+                    </span>
+
+                    <span class="famous">
+                        Pizza
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             14
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Karavalli"
+                 data-location="Residency Road">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     karavalli.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/Karavalli.jfif"
+                     alt="Karavalli">
+
+                <span class="delivery">
+                    40–50 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Karavalli
+                    </h2>
+
+                    <p class="restaurant-type">
+                        Coastal • Seafood • Karnataka
+                    </p>
+
+                    <p class="restaurant-location">
+                        Residency Road
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.8
+                    </span>
+
+                    <span class="famous">
+                        Seafood
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             15
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Halli Mane"
+                 data-location="Malleshwaram">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     halli-mane.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/halli.jfif"
+                     alt="Halli Mane">
+
+                <span class="delivery">
+                    25–35 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Halli Mane
+                    </h2>
+
+                    <p class="restaurant-type">
+                        Karnataka • Traditional
+                    </p>
+
+                    <p class="restaurant-location">
+                        Malleshwaram
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.3
+                    </span>
+
+                    <span class="famous">
+                        Karnataka Meals
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             16
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Taaza Thindi"
+                 data-location="Jayanagar">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     taaza-thindi.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/taza.jfif"
+                     alt="Taaza Thindi">
+
+                <span class="delivery">
+                    20–25 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Taaza Thindi
+                    </h2>
+
+                    <p class="restaurant-type">
+                        South Indian • Tiffins
+                    </p>
+
+                    <p class="restaurant-location">
+                        Jayanagar
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.4
+                    </span>
+
+                    <span class="famous">
+                        Masala Dosa
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             17
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Koshy's"
+                 data-location="St. Mark's Road">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     koshys.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/Koshy's, Bangalore.jfif"
+                     alt="Koshy's">
+
+                <span class="delivery">
+                    30–40 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Koshy's
+                    </h2>
+
+                    <p class="restaurant-type">
+                        Indian • Continental • Cafe
+                    </p>
+
+                    <p class="restaurant-location">
+                        St. Mark's Road
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.2
+                    </span>
+
+                    <span class="famous">
+                        Continental Food
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             18
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Maiyas"
+                 data-location="Jayanagar">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     maiyaas.jpg
+                -->
+
+                <img src="./images/project_images/project_images/morning/masala_dosa.jfif"
+                     alt="Maiyas">
+
+                <span class="delivery">
+                    25–35 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Maiyas
+                    </h2>
+
+                    <p class="restaurant-type">
+                        South Indian • Vegetarian
+                    </p>
+
+                    <p class="restaurant-location">
+                        Jayanagar
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.3
+                    </span>
+
+                    <span class="famous">
+                        Masala Dosa
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             19
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Oota"
+                 data-location="Whitefield">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     oota.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/oota.jfif"
+                     alt="Oota">
+
+                <span class="delivery">
+                    35–45 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Oota
+                    </h2>
+
+                    <p class="restaurant-type">
+                        Karnataka • Mangalorean
+                    </p>
+
+                    <p class="restaurant-location">
+                        Whitefield
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.9
+                    </span>
+
+                    <span class="famous">
+                        Mangalorean Thali
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             20
+        ================================================== -->
+
+        <article class="restaurant-card"
+                 data-restaurant="Windmills Craftworks"
+                 data-location="Whitefield">
+
+            <div class="restaurant-photo">
+
+                <!-- PUT:
+                     windmills.jpg
+                -->
+
+                <img src="./images/restarant_image/resta/resta/Windmills.jfif"
+                     alt="Windmills Craftworks">
+
+                <span class="delivery">
+                    40–50 min
+                </span>
+
+            </div>
+
+
+            <div class="restaurant-content">
+
+                <div class="restaurant-main">
+
+                    <h2>
+                        Windmills Craftworks
+                    </h2>
+
+                    <p class="restaurant-type">
+                        Continental • North Indian
+                    </p>
+
+                    <p class="restaurant-location">
+                        Whitefield
+                    </p>
+
+                </div>
+
+
+                <div class="restaurant-side">
+
+                    <span class="rating">
+                        ★ 4.8
+                    </span>
+
+                    <span class="famous">
+                        Pizza & Continental
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     COMMON FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <div class="footer-brand">
+
+            <a href="index.html"
+               class="footer-logo">
+
+                <span class="logo-mark">
+                    SF
+                </span>
+
+                <span class="logo-text">
+                    Spice<span>Fit</span>
+                </span>
+
+            </a>
+
+            <p>
+                Delicious food from your favourite
+                restaurants, delivered to your door.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="restaurants.html">
+                Restaurants
+            </a>
+
+            <a href="orders.html">
+                My Orders
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Customer
+            </h4>
+
+            <a href="#">
+                Help & Support
+            </a>
+
+            <a href="#">
+                Contact Us
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Account
+            </h4>
+
+            <a href="login.html">
+                Login
+            </a>
+
+            <a href="register.html">
+                Register
+            </a>
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 SpiceFit. All rights reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+    /* =========================================
+       CART COUNT
+    ========================================== */
+
+    function updateCartCount() {
+
+        let cart = [];
+
+        try {
+
+            cart =
+                JSON.parse(
+                    localStorage.getItem(
+                        "spicefitCart"
+                    )
+                ) || [];
+
+        } catch (error) {
+
+            cart = [];
+
+        }
+
+
+        let count = 0;
+
+
+        cart.forEach(item => {
+
+            count += Number(
+                item.qty ||
+                item.quantity ||
+                1
+            );
+
+        });
+
+
+        document.getElementById(
+            "cartCount"
+        ).textContent = count;
+
+    }
+
+
+    updateCartCount();
+
+
+
+    /* =========================================
+       MOBILE NAVIGATION
+    ========================================== */
+
+    const mobileMenu =
+        document.getElementById(
+            "mobileMenu"
+        );
+
+
+    const mobileNav =
+        document.getElementById(
+            "mobileNav"
+        );
+
+
+    mobileMenu.addEventListener(
+        "click",
+        () => {
+
+            mobileNav.classList.toggle(
+                "show"
+            );
+
+        }
+    );
+
+
+
+    /* =========================================
+       RESTAURANT CLICK
+    ========================================== */
+
+    const restaurants =
+        document.querySelectorAll(
+            ".restaurant-card"
+        );
+
+
+    restaurants.forEach(
+        restaurant => {
+
+            restaurant.addEventListener(
+                "click",
+                () => {
+
+                    const name =
+                        restaurant.dataset.restaurant;
+
+                    const location =
+                        restaurant.dataset.location;
+
+
+                    window.location.href =
+                        "menu.html?restaurant=" +
+                        encodeURIComponent(name) +
+                        "&location=" +
+                        encodeURIComponent(location);
+
+                }
+            );
+
+        }
+    );
+
+</script>
+
+
+</body>
+
+</html>

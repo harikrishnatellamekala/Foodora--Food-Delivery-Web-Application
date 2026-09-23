@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpiceFit - Orders</title>
+
+    <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        Spice<span>Fit</span>
+    </a>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="order.html" class="active">My Orders</a>
+
+        <a href="cart.html" class="cart-link">
+            Cart
+            <span id="cartCount">0</span>
+        </a>
+    </nav>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="orders-page">
+
+    <!-- ================= CURRENT ORDER ================= -->
+
+    <section id="currentOrderSection" class="current-order-section">
+
+        <div class="success-header">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <div>
+                <p class="success-small">
+                    ORDER CONFIRMED
+                </p>
+
+                <h1>
+                    Your food is on the way!
+                </h1>
+
+                <p class="success-text">
+                    Thank you for ordering with SpiceFit.
+                    Sit back and enjoy your meal.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- ORDER SUMMARY -->
+
+        <div class="order-summary-card">
+
+            <div class="summary-top">
+
+                <div>
+                    <span class="label">ORDER ID</span>
+                    <strong id="orderId">--</strong>
+                </div>
+
+                <div>
+                    <span class="label">PAYMENT</span>
+                    <strong id="paymentMethod">--</strong>
+                </div>
+
+                <div>
+                    <span class="label">STATUS</span>
+                    <strong class="status-pill" id="orderStatus">
+                        Order Placed
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <!-- STATUS TRACKER -->
+
+            <div class="tracking">
+
+                <div class="track-line"></div>
+
+                <div class="track-step active">
+
+                    <div class="track-dot">✓</div>
+
+                    <span>Order Placed</span>
+
+                </div>
+
+
+                <div class="track-step">
+
+                    <div class="track-dot">2</div>
+
+                    <span>Preparing</span>
+
+                </div>
+
+
+                <div class="track-step">
+
+                    <div class="track-dot">3</div>
+
+                    <span>Out for Delivery</span>
+
+                </div>
+
+
+                <div class="track-step">
+
+                    <div class="track-dot">4</div>
+
+                    <span>Delivered</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ITEMS -->
+
+            <div class="section-title">
+
+                <div>
+                    <span>YOUR ORDER</span>
+                    <h2>Order Items</h2>
+                </div>
+
+                <span id="itemCount" class="item-count">
+                    0 items
+                </span>
+
+            </div>
+
+
+            <div id="orderItems" class="order-items">
+                <!-- JS -->
+            </div>
+
+
+            <!-- BILL -->
+
+            <div class="bill-section">
+
+                <h2>Bill Details</h2>
+
+                <div class="bill-row">
+                    <span>Item Total</span>
+                    <strong id="itemTotal">₹0</strong>
+                </div>
+
+                <div class="bill-row">
+                    <span>Delivery Fee</span>
+                    <strong id="deliveryFee">₹40</strong>
+                </div>
+
+                <div class="bill-row">
+                    <span>Platform Fee</span>
+                    <strong id="platformFee">₹5</strong>
+                </div>
+
+                <div class="bill-divider"></div>
+
+                <div class="bill-row grand-total">
+                    <span>Grand Total</span>
+                    <strong id="total">₹0</strong>
+                </div>
+
+            </div>
+
+
+            <!-- ACTIONS -->
+
+            <div class="order-actions">
+
+                <a href="restaurants.html" class="primary-btn">
+                    Order More Food
+                </a>
+
+                <a href="index.html" class="secondary-btn">
+                    Back to Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= MY ORDERS ================= -->
+
+    <section id="allOrdersSection" class="all-orders-section">
+
+        <div class="page-heading">
+
+            <div>
+                <p>SPICEFIt ORDERS</p>
+
+                <h1>
+                    My Orders
+                </h1>
+
+                <span>
+                    Your recent food orders in one place
+                </span>
+            </div>
+
+            <a href="restaurants.html" class="browse-btn">
+                + Order Food
+            </a>
+
+        </div>
+
+
+        <div id="ordersList" class="orders-list">
+            <!-- JS -->
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-logo">
+        Spice<span>Fit</span>
+    </div>
+
+    <p>
+        Delicious food. Delivered with care.
+    </p>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="order.html">My Orders</a>
+        <a href="cart.html">Cart</a>
+    </div>
+
+    <small>
+        © 2026 SpiceFit. All rights reserved.
+    </small>
+
+</footer>
+
+
+<script src="order.js"></script>
+
+</body>
+</html>

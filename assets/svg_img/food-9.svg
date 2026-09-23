@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f28482"/><stop offset="1" stop-color="#fff8e9"/></linearGradient></defs>
+    <rect width="320" height="220" rx="26" fill="url(#g)"/><ellipse cx="160" cy="126" rx="92" ry="30" fill="#fff"/><ellipse cx="160" cy="108" rx="62" ry="34" fill="#7f1d1d"/>
+    <text x="160" y="194" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#2a211c">Samosa</text></svg>

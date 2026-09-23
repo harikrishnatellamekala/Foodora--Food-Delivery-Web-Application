@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiceFit | Food Delivery</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">SF</span>
+            <span class="logo-text">Spice<span>Fit</span></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <!-- <a href="restaurants.html">Orders</a> -->
+            <a href="order.html">My Orders</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="login.html" class="login-link">Login</a>
+            <a href="cart.html" class="cart-button">Cart <span id="cartCount">0</span></a>
+        </div>
+
+        <button class="mobile-menu" id="mobileMenu" type="button" aria-label="Open menu">☰</button>
+    </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="restaurants.html">Restaurants</a>
+    <!-- <a href="restaurants.html">Offers</a> -->
+    <a href="orders.html">My Orders</a>
+    <a href="login.html">Login</a>
+    <a href="cart.html">Cart</a>
+</div>
+
+<section class="hero-video-section">
+    <div class="hero-video-wrapper">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="./videos/pintrest_home_page.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+        <div class="video-placeholder">
+            <p>YOUR VIDEO HERE</p>
+            <span>Replace the video path in index.html</span>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-copy">
+            <p>GOOD FOOD • GOOD MOOD</p>
+            <h1>Discover your<br><span>next favourite.</span></h1>
+            <a href="#morningTrack" class="hero-button">Explore Food ↓</a>
+        </div>
+    </div>
+</section>
+
+<main class="home-content">
+
+<section class="food-section">
+    <div class="section-heading">
+        <div>
+            <p class="section-label">START YOUR DAY</p>
+            <h2>Morning Tiffins</h2>
+        </div>
+        <div class="section-controls">
+            <button class="scroll-button" data-target="morningTrack" data-direction="left" type="button">←</button>
+            <button class="scroll-button" data-target="morningTrack" data-direction="right" type="button">→</button>
+        </div>
+    </div>
+
+    <div class="food-track-wrapper">
+        <div class="food-track" id="morningTrack">
+
+            <article class="food-card" data-item="Idli Sambar" data-price="60" data-image="./images/project_images/project_images/morning/idly.jfif" data-description="Soft steamed idlis with hot sambar">
+                <div class="food-image"><img src="./images/project_images/project_images/morning/idly.jfif" alt="Idli Sambar"></div>
+                <div class="food-info"><h3>Idli Sambar</h3><p>Soft steamed idlis with hot sambar</p><div class="food-bottom"><strong>₹60</strong><button class="add-button" type="button">+</button></div></div>
+            </article>
+
+            <article class="food-card" data-item="Masala Dosa" data-price="90" data-image="./images/project_images/project_images/morning/masala_dosa.jfif" data-description="Crispy dosa filled with potato masala">
+                <div class="food-image"><img src="./images/project_images/project_images/morning/masala_dosa.jfif" alt="Masala Dosa"></div>
+                <div class="food-info"><h3>Masala Dosa</h3><p>Crispy dosa filled with potato masala</p><div class="food-bottom"><strong>₹90</strong><button class="add-button" type="button">+</button></div></div>
+            </article>
+
+            <article class="food-card" data-item="Plain Dosa" data-price="70" data-image="./images/project_images/project_images/morning/plane_dosa.jfif" data-description="Thin crispy South Indian dosa">
+                <div class="food-image"><img src="./images/project_images/project_images/morning/plane_dosa.jfif" alt="Plain Dosa"></div>
+                <div class="food-info"><h3>Plain Dosa</h3><p>Thin crispy South Indian dosa</p><div class="food-bottom"><strong>₹70</strong><button class="add-button" type="button">+</button></div></div>
+            </article>
+
+            <article class="food-card" data-item="Vada Sambar" data-price="65" data-image="./images/project_images/project_images/morning/vada.jfif" data-description="Crispy medu vada with sambar">
+                <div class="food-image"><img src="./images/project_images/project_images/morning/vada.jfif" alt="Vada Sambar"></div>
+                <div class="food-info"><h3>Vada Sambar</h3><p>Crispy medu vada with sambar</p><div class="food-bottom"><strong>₹65</strong><button class="add-button" type="button">+</button></div></div>
+            </article>
+
+            <article class="food-card" data-item="Poori Masala" data-price="80" data-image="./images/project_images/project_images/morning/poori.jfif" data-description="Fluffy pooris with potato masala">
+                <div class="food-image"><img src="./images/project_images/project_images/morning/poori.jfif" alt="Poori Masala"></div>
+                <div class="food-info"><h3>Poori Masala</h3><p>Fluffy pooris with potato masala</p><div class="food-bottom"><strong>₹80</strong><button class="add-button" type="button">+</button></div></div>
+            </article>
+
+            <article class="food-card" data-item="Pongal" data-price="75" data-image="./images/project_images/project_images/morning/pongal.jfif" data-description="Creamy South Indian ven pongal">
+                <div class="food-image"><img src="./images/project_images/project_images/morning/pongal.jfif" alt="Pongal"></div>
+                <div class="food-info"><h3>Pongal</h3><p>Creamy South Indian ven pongal</p><div class="food-bottom"><strong>₹75</strong><button class="add-button" type="button">+</button></div></div>
+            </article>
+
+            <article class="food-card" data-item="Upma" data-price="55" data-image="./images/project_images/project_images/morning/upma.jfif" data-description="Freshly prepared South Indian upma">
+                <div class="food-image"><img src="./images/project_images/project_images/morning/upma.jfif" alt="Upma"></div>
+                <div class="food-info"><h3>Upma</h3><p>Freshly prepared South Indian upma</p><div class="food-bottom"><strong>₹55</strong><button class="add-button" type="button">+</button></div></div>
+            </article>
+
+            <article class="food-card" data-item="Thatte Idli" data-price="70" data-image="./images/project_images/project_images/morning/Thatte_idli.jfif" data-description="Soft Karnataka-style plate idli">
+                <div class="food-image"><img src="./images/project_images/project_images/morning/Thatte_idli.jfif" alt="Thatte Idli"></div>
+                <div class="food-info"><h3>Thatte Idli</h3><p>Soft Karnataka-style plate idli</p><div class="food-bottom"><strong>₹70</strong><button class="add-button" type="button">+</button></div></div>
+            </article>
+
+            <article class="food-card" data-item="Pesarattu" data-price="90" data-image="./images/project_images/project_images/morning/Pesarattu.jfif" data-description="Green gram dosa with ginger chutney">
+                <div class="food-image"><img src="./images/project_images/project_images/morning/Pesarattu.jfif" alt="Pesarattu"></div>
+                <div class="food-info"><h3>Pesarattu</h3><p>Green gram dosa with ginger chutney</p><div class="food-bottom"><strong>₹90</strong><button class="add-button" type="button">+</button></div></div>
+            </article>
+
+            <article class="food-card" data-item="Rava Dosa" data-price="95" data-image="./images/project_images/project_images/morning/rava_dosa.jfif" data-description="Thin crispy semolina dosa">
+                <div class="food-image"><img src="./images/project_images/project_images/morning/rava_dosa.jfif" alt="Rava Dosa"></div>
+                <div class="food-info"><h3>Rava Dosa</h3><p>Thin crispy semolina dosa</p><div class="food-bottom"><strong>₹95</strong><button class="add-button" type="button">+</button></div></div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="food-section">
+    <div class="section-heading">
+        <div><p class="section-label">LUNCH TIME</p><h2>Afternoon Food</h2></div>
+        <div class="section-controls">
+            <button class="scroll-button" data-target="afternoonTrack" data-direction="left" type="button">←</button>
+            <button class="scroll-button" data-target="afternoonTrack" data-direction="right" type="button">→</button>
+        </div>
+    </div>
+    <div class="food-track-wrapper"><div class="food-track" id="afternoonTrack">
+
+        <article class="food-card" data-item="Chicken Biryani" data-price="220" data-image="./images/project_images/project_images/after noon/biryani.jfif" data-description="Fragrant basmati rice with tender chicken"><div class="food-image"><img src="./images/project_images/project_images/after noon/biryani.jfif" alt="Chicken Biryani"></div><div class="food-info"><h3>Chicken Biryani</h3><p>Fragrant basmati rice with tender chicken</p><div class="food-bottom"><strong>₹220</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Mutton Biryani" data-price="280" data-image="./images/project_images/project_images/after noon/Mutton Biryani.jfif" data-description="Aromatic rice with slow-cooked mutton"><div class="food-image"><img src="./images/project_images/project_images/after noon/Mutton Biryani.jfif" alt="Mutton Biryani"></div><div class="food-info"><h3>Mutton Biryani</h3><p>Aromatic rice with slow-cooked mutton</p><div class="food-bottom"><strong>₹280</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Veg Biryani" data-price="160" data-image="./images/project_images/project_images/after noon/veg_biryani.jfif" data-description="Fragrant rice cooked with fresh vegetables"><div class="food-image"><img src="./images/project_images/project_images/after noon/veg_biryani.jfif" alt="Veg Biryani"></div><div class="food-info"><h3>Veg Biryani</h3><p>Fragrant rice cooked with fresh vegetables</p><div class="food-bottom"><strong>₹160</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Andhra Meals" data-price="180" data-image="./images/project_images/project_images/after noon/banana_leaf.jfif" data-description="Traditional Andhra-style lunch"><div class="food-image"><img src="./images/project_images/project_images/after noon/banana_leaf.jfif" alt="Andhra Meals"></div><div class="food-info"><h3>Andhra Meals</h3><p>Traditional Andhra-style lunch</p><div class="food-bottom"><strong>₹180</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="South Indian Meals" data-price="150" data-image="./images/project_images/project_images/after noon/thali.jfif" data-description="Complete traditional South Indian meal"><div class="food-image"><img src="./images/project_images/project_images/after noon/thali.jfif" alt="South Indian Meals"></div><div class="food-info"><h3>South Indian Meals</h3><p>Complete traditional South Indian meal</p><div class="food-bottom"><strong>₹150</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Chicken Curry" data-price="210" data-image="./images/project_images/project_images/after noon/chicken_curry.jfif" data-description="Spicy home-style chicken curry"><div class="food-image"><img src="./images/project_images/project_images/after noon/chicken_curry.jfif" alt="Chicken Curry"></div><div class="food-info"><h3>Chicken Curry</h3><p>Spicy home-style chicken curry</p><div class="food-bottom"><strong>₹210</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Paneer Butter Masala" data-price="190" data-image="./images/project_images/project_images/after noon/panner_curry.jfif" data-description="Creamy paneer in rich tomato gravy"><div class="food-image"><img src="./images/project_images/project_images/after noon/panner_curry.jfif" alt="Paneer Butter Masala"></div><div class="food-info"><h3>Paneer Butter Masala</h3><p>Creamy paneer in rich tomato gravy</p><div class="food-bottom"><strong>₹190</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Chicken Fried Rice" data-price="200" data-image="./images/project_images/project_images/after noon/chicken_fried_rice.jfif" data-description="Wok-tossed rice with chicken"><div class="food-image"><img src="./images/project_images/project_images/after noon/chicken_fried_rice.jfif" alt="Chicken Fried Rice"></div><div class="food-info"><h3>Chicken Fried Rice</h3><p>Wok-tossed rice with chicken</p><div class="food-bottom"><strong>₹200</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Veg Fried Rice" data-price="160" data-image="./images/project_images/project_images/after noon/veg_fried_rice.jfif" data-description="Wok-tossed rice with vegetables"><div class="food-image"><img src="./images/project_images/project_images/after noon/veg_fried_rice.jfif" alt="Veg Fried Rice"></div><div class="food-info"><h3>Veg Fried Rice</h3><p>Wok-tossed rice with vegetables</p><div class="food-bottom"><strong>₹160</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Fish Curry Rice" data-price="230" data-image="./images/project_images/project_images/after noon/fish_curry.jfif" data-description="Coastal fish curry with steamed rice"><div class="food-image"><img src="./images/project_images/project_images/after noon/fish_curry.jfif" alt="Fish Curry Rice"></div><div class="food-info"><h3>Fish Curry Rice</h3><p>Coastal fish curry with steamed rice</p><div class="food-bottom"><strong>₹230</strong><button class="add-button" type="button">+</button></div></div></article>
+    </div></div>
+</section>
+
+<section class="food-section">
+    <div class="section-heading">
+        <div><p class="section-label">EVENING CRAVINGS</p><h2>Evening Snacks</h2></div>
+        <div class="section-controls">
+            <button class="scroll-button" data-target="eveningTrack" data-direction="left" type="button">←</button>
+            <button class="scroll-button" data-target="eveningTrack" data-direction="right" type="button">→</button>
+        </div>
+    </div>
+    <div class="food-track-wrapper"><div class="food-track" id="eveningTrack">
+
+        <article class="food-card" data-item="Samosa" data-price="45" data-image="./images/project_images/project_images/evening/samosa.jfif" data-description="Crispy pastry filled with spiced potato"><div class="food-image"><img src="./images/project_images/project_images/evening/samosa.jfif" alt="Samosa"></div><div class="food-info"><h3>Samosa</h3><p>Crispy pastry filled with spiced potato</p><div class="food-bottom"><strong>₹45</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Onion Pakoda" data-price="70" data-image="./images/project_images/project_images/evening/Onion Pakoda 🇮🇳.jfif" data-description="Crispy onion fritters with spices"><div class="food-image"><img src="./images/project_images/project_images/evening/Onion Pakoda 🇮🇳.jfif" alt="Onion Pakoda"></div><div class="food-info"><h3>Onion Pakoda</h3><p>Crispy onion fritters with spices</p><div class="food-bottom"><strong>₹70</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Mysore Bonda" data-price="65" data-image="./images/project_images/project_images/evening/bonda.jfif" data-description="Soft fluffy fried South Indian snack"><div class="food-image"><img src="./images/project_images/project_images/evening/bonda.jfif" alt="Mysore Bonda"></div><div class="food-info"><h3>Mysore Bonda</h3><p>Soft fluffy fried South Indian snack</p><div class="food-bottom"><strong>₹65</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Gobi Manchurian" data-price="130" data-image="./images/project_images/project_images/evening/gobi.jfif" data-description="Crispy cauliflower in Indo-Chinese sauce"><div class="food-image"><img src="./images/project_images/project_images/evening/gobi.jfif" alt="Gobi Manchurian"></div><div class="food-info"><h3>Gobi Manchurian</h3><p>Crispy cauliflower in Indo-Chinese sauce</p><div class="food-bottom"><strong>₹130</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Chicken 65" data-price="180" data-image="./images/project_images/project_images/evening/chicken65.jfif" data-description="Crispy spicy fried chicken bites"><div class="food-image"><img src="./images/project_images/project_images/evening/chicken65.jfif" alt="Chicken 65"></div><div class="food-info"><h3>Chicken 65</h3><p>Crispy spicy fried chicken bites</p><div class="food-bottom"><strong>₹180</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Paneer Tikka" data-price="190" data-image="./images/project_images/project_images/evening/tikka.jfif" data-description="Char-grilled paneer with Indian spices"><div class="food-image"><img src="./images/project_images/project_images/evening/tikka.jfif" alt="Paneer Tikka"></div><div class="food-info"><h3>Paneer Tikka</h3><p>Char-grilled paneer with Indian spices</p><div class="food-bottom"><strong>₹190</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="French Fries" data-price="120" data-image="./images/project_images/project_images/evening/french fries.jfif" data-description="Golden crispy seasoned fries"><div class="food-image"><img src="./images/project_images/project_images/evening/french fries.jfif" alt="French Fries"></div><div class="food-info"><h3>French Fries</h3><p>Golden crispy seasoned fries</p><div class="food-bottom"><strong>₹120</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Veg Sandwich" data-price="110" data-image="./images/project_images/project_images/evening/Sandwich.jfif" data-description="Grilled sandwich with fresh vegetables"><div class="food-image"><img src="./images/project_images/project_images/evening/Sandwich.jfif" alt="Veg Sandwich"></div><div class="food-info"><h3>Veg Sandwich</h3><p>Grilled sandwich with fresh vegetables</p><div class="food-bottom"><strong>₹110</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Chicken Sandwich" data-price="160" data-image="./images/project_images/project_images/evening/chiken_sand.jfif" data-description="Grilled chicken with fresh vegetables"><div class="food-image"><img src="./images/project_images/project_images/evening/chiken_sand.jfif" alt="Chicken Sandwich"></div><div class="food-info"><h3>Chicken Sandwich</h3><p>Grilled chicken with fresh vegetables</p><div class="food-bottom"><strong>₹160</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Burger" data-price="180" data-image="./images/project_images/project_images/evening/chiken_burger.jfif" data-description="Juicy burger with fresh toppings"><div class="food-image"><img src="./images/project_images/project_images/evening/chiken_burger.jfif" alt="Burger"></div><div class="food-info"><h3>Burger</h3><p>Juicy burger with fresh toppings</p><div class="food-bottom"><strong>₹180</strong><button class="add-button" type="button">+</button></div></div></article>
+    </div></div>
+</section>
+
+<section class="food-section">
+    <div class="section-heading">
+        <div><p class="section-label">LATE NIGHT CRAVINGS</p><h2>Night Food</h2></div>
+        <div class="section-controls">
+            <button class="scroll-button" data-target="nightTrack" data-direction="left" type="button">←</button>
+            <button class="scroll-button" data-target="nightTrack" data-direction="right" type="button">→</button>
+        </div>
+    </div>
+    <div class="food-track-wrapper"><div class="food-track" id="nightTrack">
+
+        <article class="food-card" data-item="Hyderabadi Biryani" data-price="230" data-image="./images/project_images/project_images/night/hyd_biryani.jfif" data-description="Aromatic rice with spicy chicken"><div class="food-image"><img src="./images/project_images/project_images/night/hyd_biryani.jfif" alt="Hyderabadi Biryani"></div><div class="food-info"><h3>Hyderabadi Biryani</h3><p>Aromatic rice with spicy chicken</p><div class="food-bottom"><strong>₹230</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Chicken Shawarma" data-price="160" data-image="./images/project_images/project_images/night/Shawarma.jfif" data-description="Juicy chicken wrapped with fresh salad"><div class="food-image"><img src="./images/project_images/project_images/night/Shawarma.jfif" alt="Chicken Shawarma"></div><div class="food-info"><h3>Chicken Shawarma</h3><p>Juicy chicken wrapped with fresh salad</p><div class="food-bottom"><strong>₹160</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Chicken Kebab" data-price="200" data-image="./images/project_images/project_images/night/kabab.jfif" data-description="Char-grilled chicken kebab"><div class="food-image"><img src="./images/project_images/project_images/night/kabab.jfif" alt="Chicken Kebab"></div><div class="food-info"><h3>Chicken Kebab</h3><p>Char-grilled chicken kebab</p><div class="food-bottom"><strong>₹200</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Tandoori Chicken" data-price="280" data-image="./images/project_images/project_images/night/tandoori.jfif" data-description="Classic smoky tandoori chicken"><div class="food-image"><img src="./images/project_images/project_images/night/tandoori.jfif" alt="Tandoori Chicken"></div><div class="food-info"><h3>Tandoori Chicken</h3><p>Classic smoky tandoori chicken</p><div class="food-bottom"><strong>₹280</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Butter Chicken" data-price="240" data-image="./images/project_images/project_images/night/butter_chicken.jfif" data-description="Creamy tomato butter chicken"><div class="food-image"><img src="./images/project_images/project_images/night/butter_chicken.jfif" alt="Butter Chicken"></div><div class="food-info"><h3>Butter Chicken</h3><p>Creamy tomato butter chicken</p><div class="food-bottom"><strong>₹240</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Chicken Noodles" data-price="190" data-image="./images/project_images/project_images/night/Noodles.jfif" data-description="Wok-tossed noodles with chicken"><div class="food-image"><img src="./images/project_images/project_images/night/Noodles.jfif" alt="Chicken Noodles"></div><div class="food-info"><h3>Chicken Noodles</h3><p>Wok-tossed noodles with chicken</p><div class="food-bottom"><strong>₹190</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Chicken Fried Rice" data-price="200" data-image="./images/project_images/project_images/night/Chicken Fried .jfif" data-description="Smoky wok-fried rice with chicken"><div class="food-image"><img src="./images/project_images/project_images/night/Chicken Fried .jfif" alt="Chicken Fried Rice"></div><div class="food-info"><h3>Chicken Fried Rice</h3><p>Smoky wok-fried rice with chicken</p><div class="food-bottom"><strong>₹200</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Pizza" data-price="220" data-image="./images/project_images/project_images/night/pizza.jfif" data-description="Freshly baked cheesy pizza"><div class="food-image"><img src="./images/project_images/project_images/night/pizza.jfif" alt="Pizza"></div><div class="food-info"><h3>Pizza</h3><p>Freshly baked cheesy pizza</p><div class="food-bottom"><strong>₹220</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Chicken Burger" data-price="190" data-image="./images/project_images/project_images/night/sandwitch_bugert.jfif" data-description="Juicy chicken patty with fresh toppings"><div class="food-image"><img src="./images/project_images/project_images/night/sandwitch_bugert.jfif" alt="Chicken Burger"></div><div class="food-info"><h3>Chicken Burger</h3><p>Juicy chicken patty with fresh toppings</p><div class="food-bottom"><strong>₹190</strong><button class="add-button" type="button">+</button></div></div></article>
+        <article class="food-card" data-item="Chicken Momos" data-price="150" data-image="./images/project_images/project_images/night/momos.jfif" data-description="Steamed momos with spicy dip"><div class="food-image"><img src="./images/project_images/project_images/night/momos.jfif" alt="Chicken Momos"></div><div class="food-info"><h3>Chicken Momos</h3><p>Steamed momos with spicy dip</p><div class="food-bottom"><strong>₹150</strong><button class="add-button" type="button">+</button></div></div></article>
+    </div></div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <a href="index.html" class="logo footer-logo"><span class="logo-mark">SF</span><span class="logo-text">Spice<span>Fit</span></span></a>
+            <p>Delicious food from your favourite restaurants, delivered to your door.</p>
+        </div>
+        <div class="footer-column"><h4>Quick Links</h4><a href="index.html">Home</a><a href="restaurants.html">Restaurants</a><a href="orders.html">My Orders</a><a href="cart.html">Cart</a></div>
+        <div class="footer-column"><h4>Customer</h4><a href="#">Help &amp; Support</a><a href="#">Contact Us</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+        <div class="footer-column"><h4>Follow Us</h4><div class="social-links"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">LinkedIn</a></div></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 SpiceFit. All rights reserved.</p><p>Made for food lovers.</p></div>
+</footer>
+
+<div class="food-modal" id="foodModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="food-modal-card" role="dialog" aria-modal="true" aria-labelledby="modalFoodName">
+        <button class="modal-close" id="modalClose" type="button" aria-label="Close">×</button>
+        <img id="modalFoodImage" src="" alt="">
+        <div class="modal-content">
+            <p class="modal-label">SPICEFIT SPECIAL</p>
+            <h2 id="modalFoodName"></h2>
+            <p id="modalFoodDescription"></p>
+            <div class="modal-price" id="modalFoodPrice"></div>
+            <div class="modal-actions">
+                <button class="modal-add" id="modalAdd" type="button">Add to Cart</button>
+                <a class="modal-cart" href="cart.html">View Cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="toast" id="toast" aria-live="polite"></div>
+
+<script src="home.js"></script>
+<script src="menu.js"></script>
+<script src="cart.js"></script>
+<script src="payment.js"></script>
+<script src="order.js"></script>
+<script src="orders.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SpiceFit | Payment</title>
+
+    <link rel="stylesheet"
+          href="payment.css">
+
+</head>
+
+
+<body>
+
+<header class="payment-nav">
+
+    <a href="cart.html">
+        ← Back to Cart
+    </a>
+
+    <strong>
+        Spice<span>Fit</span>
+    </strong>
+
+</header>
+
+
+<main class="payment-page">
+
+    <section>
+
+        <p class="eyebrow">
+            CHECKOUT
+        </p>
+
+        <h1>
+            Complete Your Order
+        </h1>
+
+
+        <div class="payment-card">
+
+            <h2>
+                Choose Payment Method
+            </h2>
+
+
+            <label class="payment-option">
+
+                <input
+                    type="radio"
+                    name="payment"
+                    value="upi"
+                    checked
+                >
+
+                <div>
+                    <strong>UPI</strong>
+                    <small>Google Pay / PhonePe / Paytm</small>
+                </div>
+
+            </label>
+
+
+            <label class="payment-option">
+
+                <input
+                    type="radio"
+                    name="payment"
+                    value="card"
+                >
+
+                <div>
+                    <strong>Credit / Debit Card</strong>
+                    <small>Visa / Mastercard / RuPay</small>
+                </div>
+
+            </label>
+
+
+            <label class="payment-option">
+
+                <input
+                    type="radio"
+                    name="payment"
+                    value="cod"
+                >
+
+                <div>
+                    <strong>Cash on Delivery</strong>
+                    <small>Pay when your food arrives</small>
+                </div>
+
+            </label>
+
+
+            <div id="upiBox" class="extra-box">
+
+                <input
+                    type="text"
+                    placeholder="Enter UPI ID"
+                    id="upiInput"
+                >
+
+            </div>
+
+
+            <div id="cardBox"
+                 class="extra-box hidden">
+
+                <input
+                    type="text"
+                    placeholder="Card Number"
+                >
+
+                <div class="card-row">
+
+                    <input
+                        type="text"
+                        placeholder="MM/YY"
+                    >
+
+                    <input
+                        type="text"
+                        placeholder="CVV"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="placeOrderBtn"
+                class="place-order">
+
+                Place Order
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <aside class="summary-card">
+
+        <h2>
+            Order Summary
+        </h2>
+
+        <div id="summaryItems"></div>
+
+        <div class="summary-line">
+            <span>Item Total</span>
+            <strong id="summaryTotal">₹0</strong>
+        </div>
+
+        <div class="summary-line">
+            <span>Delivery</span>
+            <strong>₹40</strong>
+        </div>
+
+        <div class="summary-line">
+            <span>Platform Fee</span>
+            <strong>₹5</strong>
+        </div>
+
+        <hr>
+
+        <div class="summary-total">
+            <span>Total</span>
+            <strong id="finalTotal">₹0</strong>
+        </div>
+
+    </aside>
+
+</main>
+
+
+<script src="payment.js"></script>
+
+</body>
+</html>

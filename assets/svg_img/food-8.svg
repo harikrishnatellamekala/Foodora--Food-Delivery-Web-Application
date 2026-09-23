@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#84a59d"/><stop offset="1" stop-color="#fff8e9"/></linearGradient></defs>
+    <rect width="320" height="220" rx="26" fill="url(#g)"/><path d="M65 148 Q90 68 160 68 Q230 68 255 148Z" fill="#fff"/><path d="M88 138 Q112 94 160 94 Q208 94 232 138Z" fill="#374151"/>
+    <text x="160" y="194" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#2a211c">Noodles</text></svg>

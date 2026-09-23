@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpiceFit | Login</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         FULL SCREEN BACKGROUND
+    ========================== -->
+
+    <main class="login-page">
+
+        <!--
+            IMPORTANT:
+            Ikkada nee downloaded image path pettu.
+
+            Example:
+            ../images/food-street.png
+        -->
+        <div class="background-image"></div>
+
+
+        <!-- =========================
+             LOGIN FORM AREA
+        ========================== -->
+
+        <section class="login-wrapper">
+
+            <div class="login-card">
+
+
+                <!-- BRAND -->
+
+                <div class="brand">
+
+                    <div class="brand-mark">
+                        SF
+                    </div>
+
+                    <div class="brand-name">
+                        <span></span>
+                    </div>
+
+                </div>
+
+
+                <!-- HEADING -->
+
+                <div class="login-heading">
+
+                    <p class="welcome-label">
+                        WELCOME BACK
+                    </p>
+
+                    <h1>
+                        Sign in
+                    </h1>
+
+                    <p class="subtitle">
+                        Enter your details to continue
+                    </p>
+
+                </div>
+
+
+                <!-- =========================
+                     LOGIN FORM
+                ========================== -->
+
+                <form id="loginForm">
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <div class="input-container">
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                                autocomplete="tel"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <div class="password-heading">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <a href="#" class="forgot-password">
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+
+                        <div class="input-container">
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="passwordToggle"
+                                aria-label="Show password"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LOGIN BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="login-button"
+                        id="loginButton"
+                    >
+
+                        <span class="button-text">
+                            Sign In
+                        </span>
+
+                        <span class="button-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+                </form>
+
+
+                <!-- =========================
+                     REGISTER
+                ========================== -->
+
+                <div class="register-area">
+
+                    <span>
+                        Don't have an account?
+                    </span>
+
+                    <a href="register.html">
+                        Create Account
+                    </a>
+
+                </div>
+
+
+                <!-- SMALL FOOTER -->
+
+                <p class="secure-text">
+                    Secure login · SpiceFit
+                </p>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         SMALL UI INTERACTION
+    ========================== -->
+
+    <script>
+
+        const password =
+            document.getElementById("password");
+
+        const passwordToggle =
+            document.getElementById("passwordToggle");
+
+
+        passwordToggle.addEventListener(
+            "click",
+            function () {
+
+                if (password.type === "password") {
+
+                    password.type = "text";
+
+                    passwordToggle.textContent = "Hide";
+
+                } else {
+
+                    password.type = "password";
+
+                    passwordToggle.textContent = "Show";
+
+                }
+
+            }
+        );
+
+
+        /*
+            IMPORTANT:
+
+            Nee existing Java/backend login validation
+            ikkada disturb cheyyakunda form ID:
+
+                loginForm
+
+            and input names:
+
+                phone
+                password
+
+            same ga maintain chesanu.
+
+            Nee existing login Java / Servlet logic
+            already unte danitho connect cheyyachu.
+        */
+
+    </script>
+
+</body>
+
+</html>

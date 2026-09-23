@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SpiceFit | Menu</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="menu.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <a href="index.html"
+           class="logo">
+
+            <span class="logo-mark">
+                SF
+            </span>
+
+            <span class="logo-text">
+                Spice<span>Fit</span>
+            </span>
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="restaurants.html"
+               class="active">
+                Restaurants
+            </a>
+
+            <!-- <a href="index.html#offers">
+                Orders
+            </a> -->
+
+            <a href="order.html">
+                My Orders
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <a href="login.html"
+               class="login-link">
+                Login
+            </a>
+
+            <a href="cart.html"
+               class="cart-button">
+
+                Cart
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </a>
+
+        </div>
+
+
+        <button class="mobile-menu"
+                id="mobileMenu">
+
+            ☰
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<div class="mobile-nav"
+     id="mobileNav">
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="restaurants.html">
+        Restaurants
+    </a>
+
+    <a href="index.html#offers">
+        Offers
+    </a>
+
+    <a href="orders.html">
+        My Orders
+    </a>
+
+    <a href="login.html">
+        Login
+    </a>
+
+    <a href="cart.html">
+        Cart
+    </a>
+
+</div>
+
+
+
+<!-- =====================================================
+     MENU PAGE
+===================================================== -->
+
+<main class="menu-page">
+
+
+    <a href="restaurants.html"
+       class="back-button">
+
+        ← Back to Restaurants
+
+    </a>
+
+
+    <!-- RESTAURANT HEADER -->
+
+    <section class="restaurant-header">
+
+
+        <div class="restaurant-cover">
+
+            <!-- Restaurant image automatically changes -->
+
+            <img id="restaurantImage"
+                 src=""
+                 alt="Restaurant">
+
+        </div>
+
+
+        <div class="restaurant-info">
+
+            <p class="restaurant-label">
+                RESTAURANT
+            </p>
+
+            <h1 id="restaurantName">
+                Restaurant Name
+            </h1>
+
+            <p id="restaurantLocation">
+                Bengaluru
+            </p>
+
+            <div class="restaurant-meta">
+
+                <span>
+                    ★ 4.5
+                </span>
+
+                <span>
+                    •
+                </span>
+
+                <span>
+                    30–40 min
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- MENU HEADING -->
+
+    <section class="menu-heading">
+
+        <p>
+            OUR MENU
+        </p>
+
+        <h2>
+            Popular dishes
+        </h2>
+
+        <span>
+            Choose your favourites and add them to your cart.
+        </span>
+
+    </section>
+
+
+
+    <!-- =================================================
+         MENU ITEMS
+    ================================================== -->
+
+    <section class="menu-grid"
+             id="menuGrid">
+
+        <!-- JavaScript generates 10 items -->
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <div class="footer-brand">
+
+            <a href="index.html"
+               class="footer-logo">
+
+                <span class="logo-mark">
+                    SF
+                </span>
+
+                <span class="logo-text">
+                    Spice<span>Fit</span>
+                </span>
+
+            </a>
+
+            <p>
+                Delicious food from your favourite
+                restaurants, delivered to your door.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="restaurants.html">
+                Restaurants
+            </a>
+
+            <a href="orders.html">
+                My Orders
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Customer
+            </h4>
+
+            <a href="#">
+                Help & Support
+            </a>
+
+            <a href="#">
+                Contact Us
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Account
+            </h4>
+
+            <a href="login.html">
+                Login
+            </a>
+
+            <a href="register.html">
+                Register
+            </a>
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 SpiceFit. All rights reserved.
+
+    </div>
+
+</footer>
+
+
+
+<script src="menu.js"></script>
+
+</body>
+
+</html>
